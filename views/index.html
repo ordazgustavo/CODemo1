@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Cambista Online</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="../css/bootswatch.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="../css/simple-sidebar.css" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+  <div id="wrapper" class="toggled">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li><a href="#" id="sidebar-close">&times;</a></li>
+        <li class="sidebar-brand">
+          <a href="#">
+            <img id="logo-dashboard" src="http://www.cambista.online/wp-content/uploads/2017/03/cambistaonline-logo.png" alt="logo">
+          </a>
+        </li>
+        <li>
+          <a href="index.html">Inicio</a>
+        </li>
+        <li>
+          <a href="transacciones.html">Mis transacciones</a>
+        </li>
+        <li>
+          <a href="../index.html">Cerrar sesión</a>
+        </li>
+      </ul>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-wrapper">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <ul class="nav navbar-nav">
+            <li><a href="#menu-toggle" id="menu-toggle"><i class="glyphicon glyphicon-menu-hamburger"></i></a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Cerrar sesión</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="jumbotron">
+        <div class="container">
+          <h1>Bienvenido</h1>
+          <p>Mediante este panel puedes ver y realizar nuevas <a href="transacciones.html">transacciones</a>.</p>
+        </div>
+      </div>
+    </div>
+    <!-- /#page-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- jQuery -->
+  <script src="../js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="../js/bootstrap.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    $("#sidebar-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+</body>
+
+</html>
